@@ -246,7 +246,8 @@
 
     :mode
     (("\\.phtml\\'"      . web-mode)
-     ("\\.tpl\\.php\\'"  . web-mode)
+     ("\\.tpl\\'"        . web-mode)
+     ("\\.php\\'"        . web-mode)
      ("\\.twig\\'"       . web-mode)
      ("\\.html\\'"       . web-mode)
      ("\\.htm\\'"        . web-mode)
@@ -261,7 +262,7 @@
      ("\\.ejs\\'"        . web-mode)
      ("\\.djhtml\\'"     . web-mode))))
 
-(defun html/post-init-yasnippet ()
+(defun html/post-init-yasn
   (spacemacs/add-to-hooks 'spacemacs/load-yasnippet '(css-mode-hook
                                                       jade-mode
                                                       slim-mode)))
