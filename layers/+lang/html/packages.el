@@ -262,7 +262,7 @@
      ("\\.ejs\\'"        . web-mode)
      ("\\.djhtml\\'"     . web-mode))))
 
-(defun html/post-init-yasnippet
-    (spacemacs/add-to-hooks 'spacemacs/load-yasnippet '(css-mode-hook
-                                                        jade-mode
-                                                        slim-mode)))
+(defun html/post-init-yasnippet ()
+  (spacemacs/add-to-hooks 'spacemacs/load-yasnippet '(css-mode-hook
+                                                      jade-mode
+                                                      slim-mode)))
