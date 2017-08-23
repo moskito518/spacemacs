@@ -196,20 +196,20 @@
       ;; (defvar spacemacs--web-mode-ms-doc-toggle 0
       ;;   "Display a short doc when nil, full doc otherwise.")
 
-  ;;     (defun spacemacs//web-mode-ms-doc ()
-  ;;       (if (equal 0 spacemacs--web-mode-ms-doc-toggle)
-  ;;           "[_?_] for help"
-  ;;         "
-  ;; [_?_] display this help
-  ;; [_k_] previous [_j_] next   [_K_] previous sibling [_J_] next sibling
-  ;; [_h_] parent   [_l_] child  [_c_] clone [_d_] delete [_D_] kill [_r_] rename
-  ;; [_w_] wrap     [_p_] xpath
-  ;; [_q_] quit"))
+      ;;     (defun spacemacs//web-mode-ms-doc ()
+      ;;       (if (equal 0 spacemacs--web-mode-ms-doc-toggle)
+      ;;           "[_?_] for help"
+      ;;         "
+      ;; [_?_] display this help
+      ;; [_k_] previous [_j_] next   [_K_] previous sibling [_J_] next sibling
+      ;; [_h_] parent   [_l_] child  [_c_] clone [_d_] delete [_D_] kill [_r_] rename
+      ;; [_w_] wrap     [_p_] xpath
+      ;; [_q_] quit"))
 
-  ;;     (defun spacemacs//web-mode-ms-toggle-doc ()
-  ;;       (interactive)
-  ;;       (setq spacemacs--web-mode-ms-doc-toggle
-  ;;             (logxor spacemacs--web-mode-ms-doc-toggle 1)))
+      ;;     (defun spacemacs//web-mode-ms-toggle-doc ()
+      ;;       (interactive)
+      ;;       (setq spacemacs--web-mode-ms-doc-toggle
+      ;;             (logxor spacemacs--web-mode-ms-doc-toggle 1)))
 
       (spacemacs|define-transient-state web-mode
         :title "Web-mode Transient State"
@@ -236,7 +236,8 @@
 
     :mode
     (("\\.phtml\\'"      . web-mode)
-     ("\\.tpl\\.php\\'"        . web-mode)
+     ("\\.tpl\\'"        . web-mode)
+     ("\\.php\\'"        . web-mode)
      ("\\.twig\\'"       . web-mode)
      ("\\.html\\'"       . web-mode)
      ("\\.htm\\'"        . web-mode)
@@ -249,6 +250,7 @@
      ("\\.hbs\\'"        . web-mode)
      ("\\.eco\\'"        . web-mode)
      ("\\.ejs\\'"        . web-mode)
+     ("\\.vue\\'"        . web-mode)
      ("\\.djhtml\\'"     . web-mode))))
 
 (defun html/post-init-yasnippet ()
